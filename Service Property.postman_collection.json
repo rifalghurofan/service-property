@@ -1,0 +1,1497 @@
+{
+	"info": {
+		"_postman_id": "10cc51a6-9a2a-4c35-8a8e-1e19810fc75b",
+		"name": "Service Property",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23034311"
+	},
+	"item": [
+		{
+			"name": "Property",
+			"item": [
+				{
+					"name": "get properties",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/property",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"property"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get one property",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/property/detail?id=484a45dab4502eea9c8cf603678fc174",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"property",
+								"detail"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "484a45dab4502eea9c8cf603678fc174"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "bookmark",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "uid",
+									"value": "[\"484a45dab4502eea9c8cf603678fc174\", \"f2cc00e4a255e96f9d7180cebf9a7423\"]",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/property/bookmark",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"property",
+								"bookmark"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "rekomendation property",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "lower_city",
+									"value": "Ambulu",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/property/rekomendasiProperti",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"property",
+								"rekomendasiProperti"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post property",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "address",
+									"value": "jalan ampel city",
+									"type": "text"
+								},
+								{
+									"key": "brochure",
+									"type": "file",
+									"src": "/F:/beritaacarasempro_susanti dwi.pdf"
+								},
+								{
+									"key": "categories",
+									"value": "rumah",
+									"type": "text"
+								},
+								{
+									"key": "linked_tender",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "creator",
+									"value": "andi",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "lorem ipsum",
+									"type": "text"
+								},
+								{
+									"key": "developer",
+									"value": "toko andi",
+									"type": "text"
+								},
+								{
+									"key": "fee",
+									"value": "1000000",
+									"type": "text"
+								},
+								{
+									"key": "image_map",
+									"value": "www.dotcom.com",
+									"type": "text"
+								},
+								{
+									"key": "images",
+									"type": "file",
+									"src": [
+										"/F:/bmj.PNG",
+										"/F:/costum.PNG"
+									]
+								},
+								{
+									"key": "index_priority",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "is_secondary",
+									"value": "false",
+									"type": "text"
+								},
+								{
+									"key": "is_sold",
+									"value": "false",
+									"type": "text"
+								},
+								{
+									"key": "listing_id",
+									"value": "asdfjkjhdfgvxczgrhFFGDExbead",
+									"type": "text"
+								},
+								{
+									"key": "maps",
+									"value": "www.aps.com",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "rumah jelek banget",
+									"type": "text"
+								},
+								{
+									"key": "near_facilities_id",
+									"value": "afFGsgadGfFGGhdd",
+									"type": "text"
+								},
+								{
+									"key": "panoramas",
+									"value": "[\"4aef069676a8146e9dc8351316471a21\"]",
+									"type": "text"
+								},
+								{
+									"key": "payments",
+									"value": "[\"BNI\"]",
+									"type": "text"
+								},
+								{
+									"key": "property_type",
+									"value": "perumahan",
+									"type": "text"
+								},
+								{
+									"key": "redirect_tender",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "rental_price",
+									"value": "2000000",
+									"type": "text"
+								},
+								{
+									"key": "selling_price",
+									"value": "2500000",
+									"type": "text"
+								},
+								{
+									"key": "siteplan_id",
+									"value": "56c4a6dc3527cfce49cc781f46156cf5",
+									"type": "text"
+								},
+								{
+									"key": "sketch",
+									"value": "gambar?",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "published",
+									"type": "text"
+								},
+								{
+									"key": "transaction",
+									"value": "jual",
+									"type": "text"
+								},
+								{
+									"key": "spesification_id",
+									"value": "56c4a6dc3527cfce49cc781f46156cf5",
+									"type": "text"
+								},
+								{
+									"key": "type_house",
+									"value": "[\"651752f79676adb3f89d2c8d6931beba\"]",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Jember",
+									"type": "text"
+								},
+								{
+									"key": "lower_city",
+									"value": "Ambulu",
+									"type": "text"
+								},
+								{
+									"key": "locality",
+									"value": "Ampel",
+									"type": "text"
+								},
+								{
+									"key": "sublocality",
+									"value": "Sambiringik",
+									"type": "text"
+								},
+								{
+									"key": "administrative_area",
+									"value": "Jawa timur",
+									"type": "text"
+								},
+								{
+									"key": "postal_code",
+									"value": "68162",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/property/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"property",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update property",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "address",
+									"value": "jalan ampel",
+									"type": "text"
+								},
+								{
+									"key": "brochure",
+									"type": "file",
+									"src": "/F:/desa penari.pdf"
+								},
+								{
+									"key": "categories",
+									"value": "rumah",
+									"type": "text"
+								},
+								{
+									"key": "linked_tender",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "creator",
+									"value": "andi",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "lorem ipsum",
+									"type": "text"
+								},
+								{
+									"key": "developer",
+									"value": "toko andi",
+									"type": "text"
+								},
+								{
+									"key": "fee",
+									"value": "1000000",
+									"type": "text"
+								},
+								{
+									"key": "image_map",
+									"value": "www.dotcom.com",
+									"type": "text"
+								},
+								{
+									"key": "images",
+									"type": "file",
+									"src": [
+										"/F:/1349150.jpg",
+										"/F:/ayaya.PNG"
+									]
+								},
+								{
+									"key": "index_priority",
+									"value": "11",
+									"type": "text"
+								},
+								{
+									"key": "is_secondary",
+									"value": "false",
+									"type": "text"
+								},
+								{
+									"key": "is_sold",
+									"value": "false",
+									"type": "text"
+								},
+								{
+									"key": "keywords",
+									"value": "[\"rumah jelek\"]",
+									"type": "text"
+								},
+								{
+									"key": "listing_id",
+									"value": "56c4a6dc3527cfce49cc781f4615gcf5",
+									"type": "text"
+								},
+								{
+									"key": "maps",
+									"value": "www.aps.com",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "rumah",
+									"type": "text"
+								},
+								{
+									"key": "near_facilities_id",
+									"value": "4aef069676a8146e9dc8351316471a23",
+									"type": "text"
+								},
+								{
+									"key": "panoramas",
+									"value": "[\"4aef069676a8146e9dc8351316471a21\"]",
+									"type": "text"
+								},
+								{
+									"key": "payments",
+									"value": "[\"BNI\"]",
+									"type": "text"
+								},
+								{
+									"key": "property_type",
+									"value": "perumahan",
+									"type": "text"
+								},
+								{
+									"key": "redirect_tender",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "rental_price",
+									"value": "2500000",
+									"type": "text"
+								},
+								{
+									"key": "selling_price",
+									"value": "3000000",
+									"type": "text"
+								},
+								{
+									"key": "siteplan_id",
+									"value": "56c4a6dc3527cfce49cc781f46156cf5",
+									"type": "text"
+								},
+								{
+									"key": "sketch",
+									"value": "gambar??",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "archived",
+									"type": "text"
+								},
+								{
+									"key": "transaction",
+									"value": "jual",
+									"type": "text"
+								},
+								{
+									"key": "spesification_id",
+									"value": "56c4a6dc3527cfce49cc781f46156cf5",
+									"type": "text"
+								},
+								{
+									"key": "type_house",
+									"value": "[\"651752f79676adb3f89d2c8d6931beba\"]",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/property/property?uid=f2cc00e4a255e96f9d7180cebf9a7423&status=published",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"property",
+								"property"
+							],
+							"query": [
+								{
+									"key": "uid",
+									"value": "f2cc00e4a255e96f9d7180cebf9a7423"
+								},
+								{
+									"key": "status",
+									"value": "published"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete property",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/property/delete?id=4a53979f700c39364ee7e8108a43d5c1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"property",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "4a53979f700c39364ee7e8108a43d5c1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Interface",
+			"item": [
+				{
+					"name": "get interfaces",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/interface",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"interface"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post interface",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "color",
+									"value": "blue",
+									"type": "text"
+								},
+								{
+									"key": "height",
+									"value": "100",
+									"type": "text"
+								},
+								{
+									"key": "width",
+									"value": "200",
+									"type": "text"
+								},
+								{
+									"key": "offsets",
+									"value": "[100, 200]",
+									"type": "text"
+								},
+								{
+									"key": "shape",
+									"value": "circle",
+									"type": "text"
+								},
+								{
+									"key": "position_x",
+									"value": "1.123",
+									"type": "text"
+								},
+								{
+									"key": "position_y",
+									"value": "1.213",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/interface",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"interface"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "put interface",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "color",
+									"value": "bloe",
+									"type": "text"
+								},
+								{
+									"key": "height",
+									"value": "120",
+									"type": "text"
+								},
+								{
+									"key": "width",
+									"value": "150",
+									"type": "text"
+								},
+								{
+									"key": "offsets",
+									"value": "[100,100]",
+									"type": "text"
+								},
+								{
+									"key": "shape",
+									"value": "triangle",
+									"type": "text"
+								},
+								{
+									"key": "position_x",
+									"value": "12.0",
+									"type": "text"
+								},
+								{
+									"key": "position_y",
+									"value": "15.0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/interface/update?id=5c07955f6680a93b940bf9d6442f7839",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"interface",
+								"update"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "5c07955f6680a93b940bf9d6442f7839"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete interface",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/interface/delete?id=5c07955f6680a93b940bf9d6442f7839",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"interface",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "5c07955f6680a93b940bf9d6442f7839"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Kavling",
+			"item": [
+				{
+					"name": "get kavlings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/kavling",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"kavling"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post kavling",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "property_id",
+									"value": "asghjhfgdcxvbhfdgsfcx",
+									"type": "text"
+								},
+								{
+									"key": "block",
+									"value": "M",
+									"type": "text"
+								},
+								{
+									"key": "certificate",
+									"type": "file",
+									"src": "/F:/bmj.PNG"
+								},
+								{
+									"key": "certificates",
+									"type": "file",
+									"src": [
+										"/F:/bmj.PNG",
+										"/F:/Capture.PNG"
+									]
+								},
+								{
+									"key": "cluster",
+									"value": "cluster m",
+									"type": "text"
+								},
+								{
+									"key": "interface_id",
+									"value": "dfsdfkuthgvcx",
+									"type": "text"
+								},
+								{
+									"key": "type_house_id",
+									"value": "abhjehgdzhz",
+									"type": "text"
+								},
+								{
+									"key": "images",
+									"type": "file",
+									"src": [
+										"/F:/9bc8d8019af5dca8238b0f906cecf8ec.jpg",
+										"/F:/1349150.jpg"
+									]
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/kavling/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"kavling",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "put kavling",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "property_id",
+									"value": "dafsghdsvcxvANDI",
+									"type": "text"
+								},
+								{
+									"key": "block",
+									"value": "A",
+									"type": "text"
+								},
+								{
+									"key": "certificate",
+									"type": "file",
+									"src": "/F:/JUAL.png"
+								},
+								{
+									"key": "certificates",
+									"type": "file",
+									"src": [
+										"/F:/9bc8d8019af5dca8238b0f906cecf8ec.jpg",
+										"/F:/1349150.jpg"
+									]
+								},
+								{
+									"key": "cluster",
+									"value": "clustering",
+									"type": "text"
+								},
+								{
+									"key": "interface_id",
+									"value": "alsfnjVJNKkjKJNKANkn",
+									"type": "text"
+								},
+								{
+									"key": "type_house_id",
+									"value": "akjnkjnJKkjKJNknkj Andi",
+									"type": "text"
+								},
+								{
+									"key": "images",
+									"type": "file",
+									"src": [
+										"/F:/equip.PNG",
+										"/F:/jual 1.PNG"
+									]
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/kavling/update?id=712c934ec6cacb9c4321818061b81771",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"kavling",
+								"update"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "712c934ec6cacb9c4321818061b81771"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete kavling",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/kavling/delete?id=6d63772b3751346fc48fdd4d6d01a055",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"kavling",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "6d63772b3751346fc48fdd4d6d01a055"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "LivePreviews",
+			"item": [
+				{
+					"name": "get live previews",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/live",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"live"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post live preview",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "url",
+									"value": "localhost:8000/live",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "live",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/live/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"live",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "put  live preview",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "url",
+									"value": "localhost:8000/live",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "live preview",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/live/update?id=4aef069676a8146e9dc8351316471a21",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"live",
+								"update"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "4aef069676a8146e9dc8351316471a21"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete  live preview",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/live/delete?id=688250ff7642069f80edb2ef8ee71619",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"live",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "688250ff7642069f80edb2ef8ee71619"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Siteplans",
+			"item": [
+				{
+					"name": "get siteplans",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/site",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"site"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post siteplan",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "property_id",
+									"value": "33255b1952134186539a0c32110a737c",
+									"type": "text"
+								},
+								{
+									"key": "scale",
+									"value": "0.01",
+									"type": "text"
+								},
+								{
+									"key": "font_size",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "background",
+									"type": "file",
+									"src": "/F:/sell.PNG"
+								},
+								{
+									"key": "x_coordinate",
+									"value": "123.1234",
+									"type": "text"
+								},
+								{
+									"key": "y_coordinate",
+									"value": "124.1241",
+									"type": "text"
+								},
+								{
+									"key": "z_coordinate",
+									"value": "12.1241",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/F:/1349150.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/site/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"site",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "put siteplan",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "property_id",
+									"value": "0f6da5b853a2ba7b5fee902f88ec0a42",
+									"type": "text"
+								},
+								{
+									"key": "scale",
+									"value": "0.05",
+									"type": "text"
+								},
+								{
+									"key": "font_size",
+									"value": "14",
+									"type": "text"
+								},
+								{
+									"key": "x_coordinate",
+									"value": "123.123",
+									"type": "text"
+								},
+								{
+									"key": "y_coordinate",
+									"value": "12.124",
+									"type": "text"
+								},
+								{
+									"key": "z_coordinate",
+									"value": "23.356",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/F:/pet.PNG"
+								},
+								{
+									"key": "background",
+									"type": "file",
+									"src": "/F:/B Mino.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/site/update?id=0f6da5b853a2ba7b5fee902f88ec0a42",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"site",
+								"update"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "0f6da5b853a2ba7b5fee902f88ec0a42"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete siteplan",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/site/delete?id=0f6da5b853a2ba7b5fee902f88ec0a42",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"site",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "0f6da5b853a2ba7b5fee902f88ec0a42"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TypeHouse",
+			"item": [
+				{
+					"name": "get type houses",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/type",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"type"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post type house",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "property_id",
+									"value": "asduhdfgvcrtwhsdg",
+									"type": "text"
+								},
+								{
+									"key": "booking_fee",
+									"value": "1000000",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "perumahan linggar jati",
+									"type": "text"
+								},
+								{
+									"key": "business",
+									"value": "perumahan",
+									"type": "text"
+								},
+								{
+									"key": "color",
+									"value": "black",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "rumahnya bangus banget loh",
+									"type": "text"
+								},
+								{
+									"key": "other_business",
+									"value": "nothing",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "10000000",
+									"type": "text"
+								},
+								{
+									"key": "property_type",
+									"value": "Tempat Usaha",
+									"type": "text"
+								},
+								{
+									"key": "slot",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "unit_facilities",
+									"value": "[1,2]",
+									"type": "text"
+								},
+								{
+									"key": "live_previews",
+									"value": "[\"4aef069676a8146e9dc8351316471a21\", \"a\"]",
+									"type": "text"
+								},
+								{
+									"key": "images",
+									"type": "file",
+									"src": [
+										"/F:/equip.PNG",
+										"/F:/heartbeat.jpg"
+									]
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/type/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"type",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "put type house",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "property_id",
+									"value": "asduhdfgvcrtwhsdgFsF",
+									"type": "text"
+								},
+								{
+									"key": "booking_fee",
+									"value": "1000000",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "perumahan linggar jati",
+									"type": "text"
+								},
+								{
+									"key": "business",
+									"value": "perumahan",
+									"type": "text"
+								},
+								{
+									"key": "color",
+									"value": "blue",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "rumahnya bangus banget loh",
+									"type": "text"
+								},
+								{
+									"key": "other_business",
+									"value": "nothing",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "10000000",
+									"type": "text"
+								},
+								{
+									"key": "property_type",
+									"value": "Tempat Usaha",
+									"type": "text"
+								},
+								{
+									"key": "slot",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "unit_facilities",
+									"value": "[1,2]",
+									"type": "text"
+								},
+								{
+									"key": "live_previews",
+									"value": "[\"4aef069676a8146e9dc8351316471a21\", \"a\"]",
+									"type": "text"
+								},
+								{
+									"key": "images",
+									"type": "file",
+									"src": [
+										"/F:/jual 1.PNG",
+										"/F:/JUAL.png"
+									]
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/type/update?id=e2824de416b1546b53b69ca96c6a7a57",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"type",
+								"update"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "e2824de416b1546b53b69ca96c6a7a57"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete type house",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/type/delete?id=e2824de416b1546b53b69ca96c6a7a57",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"type",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "e2824de416b1546b53b69ca96c6a7a57"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost:8082",
+			"type": "string"
+		}
+	]
+}

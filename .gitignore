@@ -1,0 +1,24 @@
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm
+
+# dotenv environment variables file
+.env
+
+# upload files
+uploads
+
+# google key
+googlekey.json
+
+# data
+seeders/data/kavlings_properties_prod-8-11-2022.json
+seeders/data/properties_prod-8-11-2022.json
+seeders/data/type_houses_properties_prod-15-11-2022.json
+
+
+seeders/
+
+.git-gitlab/
